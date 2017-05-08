@@ -1,0 +1,31 @@
+body{font:12px arial;text-align:center;background:#fff}
+body,p,form,ul{margin:0;padding:0}
+body,form{position:relative}
+ol, ul {list-style: none;}
+td{text-align:left}
+img{border:0}
+a{color:#00c}
+a:hover {color:#f00}
+a:active{color:#f00}
+
+.logo {line-height:120px;height:90px;overflow:hidden;background:url(../img/logo.gif) no-repeat center 0;margin:50px 0px 30px}
+.inputshuoming {width:730px;margin:0 auto;text-align:left;height:15px;padding-bottom:5px; font-size:14px; line-height:30px;}
+.num{width:404px;height:24px;padding:3px 7px;padding:4px 7px 2px\9;font:bold 20px arial;background:url(../img/border.png) no-repeat;border:1px solid #cdcdcd;border-color:#9a9a9a #cdcdcd #cdcdcd #9a9a9a;vertical-align:top}
+.btn{width:95px;height:32px;padding:0;padding-top:2px\9;border:0;background:#ddd url(../img/border.png) 0 -35px;cursor:pointer;font-size:14px}
+.btn_h{background-position:-100px -35px}
+.num,.btn_wr{margin:0 5px 0 0}
+.btn_wr{width:97px;height:34px;display:inline-block;background:url(../img/border.png) no-repeat -202px bottom;_padding-top:1px;*position:relative}
+.search {height:36px;}
+.result {width:730px;margin:0 auto;text-align:left;height:160px;padding-bottom:5px; font-size:14px; line-height:30px;}
+.shuoming {width:730px;margin:0 auto;text-align:left;}
+.ads {width:730px;margin:0 auto; text-align:left;}
+.foot {border-top:1px solid #D3E1F9;padding-top:10px;margin:15px 10px 0;line-height:26px;}
+.mod_search_think{width:530px;margin:0 auto 0;padding:20px; text-align:left;font-size:14px;line-height:26px;overflow:hidden;}
+/* num_area */
+.num_area{position:relative;}
+.num_area h4{padding:10px;color:#656565;font-size:16px;font-weight:bold;}
+.num_area ul{padding-left:133px;color:#999;line-height:24px;}
+.mod_search_think_pos{position:absolute;left:78px;top:0;}
+.num_area_sl{margin:5px 0 15px;}
+.num_area_sl, .num_area_six{font-size:14px;}
+.num_area_sl select{width:140px;height:22px;line-height:22px;font-size:14px;}
