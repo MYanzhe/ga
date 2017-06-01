@@ -1,21 +1,21 @@
 //
-//  LoginViewController.m
+//  RegisterViewController.m
 //  新闻
 //
 //  Created by apple on 17/6/1.
 //  Copyright © 2017年 apple. All rights reserved.
 //
 
-#import "LoginViewController.h"
 #import "RegisterViewController.h"
-@interface LoginViewController ()
+#import "LoginViewController.h"
+@interface RegisterViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phone;
-@property (weak, nonatomic) IBOutlet UITextField *pwd;
-@property (weak, nonatomic) IBOutlet UIButton *login;
+@property (weak, nonatomic) IBOutlet UITextField *password;
+@property (weak, nonatomic) IBOutlet UIButton *registerBtn;
 
 @end
 
-@implementation LoginViewController
+@implementation RegisterViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -26,29 +26,26 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-- (IBAction)loginClick:(UIButton*)sender {
+- (IBAction)registerClick:(UIButton *)sender {
     NSMutableDictionary *dic = [[NSMutableDictionary alloc]init];
-    
+
     [dic setValue:self.phone.text forKey:@"phone"];
-    [dic setValue:self.pwd.text forKey:@"password"];
+    [dic setValue:self.password.text forKey:@"password"];
     
-    [QPost getWithUrl:@"/app/user/login" param:dic headerDict:nil :^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
+    [QPost getWithUrl:@"/app/user/add" param:dic headerDict:nil :^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
         NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         if([stringData isEqualToString:@"success"]){
             NSLog(@"success");
-        } else if([stringData isEqualToString:@"error"]){
-            NSLog(@"error");
+        } else if([stringData isEqualToString:@"phoneUsed"]){
+            NSLog(@"phoneUsed");
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error");
     }];
-
 }
-
-- (IBAction)registerClick:(UIButton *)sender {
-    RegisterViewController *re = [[RegisterViewController alloc]init];
-    [self presentViewController:re animated:YES completion:nil];
+- (IBAction)toLoginViewClick:(UIButton *)sender {
+    LoginViewController *login = [[LoginViewController alloc]init];
+    [self presentViewController:login animated:YES completion:nil];
 }
 
 /*

@@ -35,7 +35,8 @@
     [UIApplication sharedApplication].networkActivityIndicatorVisible = YES;
     
     AFHTTPSessionManager *manager = [[AFHTTPSessionManager alloc] initWithBaseURL:[[NSURL alloc] initWithString:URL]];
-    
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"application/json", @"text/json", @"text/javascript",@"text/html",@"text/plain", nil];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     [manager GET:[NSString stringWithFormat:@"%@/%@",URL_PLUG,url] parameters:param progress:nil
          success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
              [UIApplication sharedApplication].networkActivityIndicatorVisible = NO;

@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "TabbarViewController.h"
-
+#import "LoginViewController.h"
 
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKConnector/ShareSDKConnector.h>
@@ -30,6 +30,7 @@
 
 @property (nonatomic , strong) NSArray *conversations;
 @property (nonatomic , strong) TabbarViewController *tabbarMain;
+@property (nonatomic , strong) LoginViewController *loginController;
 
 @end
 
@@ -49,7 +50,10 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     self.window.backgroundColor = [UIColor whiteColor];
     self.tabbarMain = [[TabbarViewController alloc]init];
-    self.window.rootViewController = self.tabbarMain;
+//    self.window.rootViewController = self.tabbarMain;
+    
+    self.loginController = [[LoginViewController alloc]init];
+    self.window.rootViewController = self.loginController;
     [self.window makeKeyAndVisible];
         
     //环信
