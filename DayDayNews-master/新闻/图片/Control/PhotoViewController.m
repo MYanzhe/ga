@@ -124,8 +124,6 @@ static NSString *const ID = @"photo";
     [dic setValue:_y forKey:@"locationY"];
     [dic setValue:_location forKey:@"location"];
     
-    
-    
     [QPost getWithUrl:@"/app/idCardSearch/add" param:dic headerDict:nil :^(NSURLSessionDataTask * _Nonnull task, id  _Nullable data) {
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {

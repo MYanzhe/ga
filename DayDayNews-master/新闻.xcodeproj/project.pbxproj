@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		183A90231EDFDE0E003F9959 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 183A90211EDFDE0E003F9959 /* LoginViewController.m */; };
+		183A90241EDFDE0E003F9959 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 183A90221EDFDE0E003F9959 /* LoginViewController.xib */; };
 		184272F01EBC1DE900E79E17 /* QTools.m in Sources */ = {isa = PBXBuildFile; fileRef = 184272EF1EBC1DE900E79E17 /* QTools.m */; };
 		184272F31EBC1EA500E79E17 /* DeviceInfoUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 184272F21EBC1EA500E79E17 /* DeviceInfoUtil.m */; };
 		18D56DED1EB81DE50001838D /* idCard in Resources */ = {isa = PBXBuildFile; fileRef = 18D56DEC1EB81DE50001838D /* idCard */; };
@@ -238,6 +240,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		183A90201EDFDE0E003F9959 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		183A90211EDFDE0E003F9959 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		183A90221EDFDE0E003F9959 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		184272EE1EBC1DE900E79E17 /* QTools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QTools.h; sourceTree = "<group>"; };
 		184272EF1EBC1DE900E79E17 /* QTools.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QTools.m; sourceTree = "<group>"; };
 		184272F11EBC1EA500E79E17 /* DeviceInfoUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceInfoUtil.h; sourceTree = "<group>"; };
@@ -1516,6 +1521,9 @@
 				19C33E281BB109A20059238A /* TabbarViewController.m */,
 				99C9A31C1D81834900063D23 /* BaseViewController.h */,
 				99C9A31D1D81834900063D23 /* BaseViewController.m */,
+				183A90201EDFDE0E003F9959 /* LoginViewController.h */,
+				183A90211EDFDE0E003F9959 /* LoginViewController.m */,
+				183A90221EDFDE0E003F9959 /* LoginViewController.xib */,
 				19C33E221BB109A20059238A /* Model */,
 				19C33E291BB109A20059238A /* View */,
 			);
@@ -1794,6 +1802,7 @@
 				1945F09A1BAFDD0200A38747 /* Assets.xcassets in Resources */,
 				19918FE11CDDEF7500A89620 /* 开始录音04录音@2x.png in Resources */,
 				19918FDC1CDDEF7500A89620 /* 兴趣删除2@.png in Resources */,
+				183A90241EDFDE0E003F9959 /* LoginViewController.xib in Resources */,
 				19970A731BCF95CD00F4CC0C /* city.plist in Resources */,
 				198AF7E11C844D3A00D941F4 /* WeiboSDK.bundle in Resources */,
 				19918FDE1CDDEF7500A89620 /* 开始录音01录音@2x.png in Resources */,
@@ -1937,6 +1946,7 @@
 				19C33E971BB10B4C0059238A /* MJType.m in Sources */,
 				198BD1EB1BBB842A00B21A07 /* UIImageView+WebCache.m in Sources */,
 				19747D3C1C87FBE500C4CBBD /* DetailWebModel.m in Sources */,
+				183A90231EDFDE0E003F9959 /* LoginViewController.m in Sources */,
 				9922B9901D803A6300E3E236 /* HMWaterflowLayout.m in Sources */,
 				19C33E2E1BB109A20059238A /* MeViewController.m in Sources */,
 				196892731BC8BDCA009D4A99 /* UIScrollView+MJExtension.m in Sources */,
