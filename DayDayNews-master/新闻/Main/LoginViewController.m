@@ -8,6 +8,8 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import "TabbarViewController.h"
+
 @interface LoginViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *phone;
 @property (weak, nonatomic) IBOutlet UITextField *pwd;
@@ -37,13 +39,15 @@
         NSString *stringData = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
         if([stringData isEqualToString:@"success"]){
             NSLog(@"success");
+            TabbarViewController *tabbarMain = [[TabbarViewController alloc]init];
+            [UIApplication sharedApplication].keyWindow.rootViewController = tabbarMain;
         } else if([stringData isEqualToString:@"error"]){
             NSLog(@"error");
+            [MBProgressHUD showError:@"用户名或密码错误" toView:self.view];
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         NSLog(@"error");
     }];
-
 }
 
 - (IBAction)registerClick:(UIButton *)sender {

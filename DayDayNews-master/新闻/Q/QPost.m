@@ -17,7 +17,7 @@
 
 #define VERSION [[NSBundle mainBundle] objectForInfoDictionaryKey:@"CFBundleShortVersionString"]
 
-#define HOST @"192.168.1.117"
+#define HOST @"192.168.1.113"
 
 #define URL @"http://"HOST@":8080"
 //#define URL @"http://"HOST@":8080"
